@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+
+    <!-- 🌤️ Sun & Cloud Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌤️</text></svg>">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="weatherStyle.css">
+</head>
+<body>
+  <div class="weather-app">
+
+    <div class="weather">
+
+      <header class="header">
+        <h1>Weather App</h1>
+        <p>Know the weather instantly</p>
+      </header>
+
+      <!-- Search Box -->
+      <div class="search-box">
+        <input placeholder="Enter your city name" type="search" class="city-input">
+        <button class="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+			
+      <!-- Weather Info Display -->
+      <section class="weather-info">
+        <img class="weather-icon" src="" alt="Weather Icon" style="display: none; width: 75px; margin: 0 auto;">
+
+        <h2 class="city-name">City Name</h2>
+        <h1 class="temperature">--°C</h1>
+        <p class="weather-condition">Weather Condition</p>
+
+        <!-- Detailed Weather Metrics -->
+        <div class="weather-detial">
+
+          <div class="detail humidity">
+            <i class="fa-solid fa-droplet"></i>
+            <div class="content">
+              <p class="label">Humidity</p>
+              <p class="value">--%</p>
+            </div>
+          </div>
+
+          <div class="detail wind">
+            <i class="fa-solid fa-wind"></i>
+            <div class="content">
+              <p class="label">Wind Speed</p>
+              <p class="value">--km/h</p>
+            </div>
+          </div>
+
+          <div class="detail feels">
+            <i class="fa-solid fa-temperature-half"></i>
+            <div class="content">
+              <p class="label">Feels Like</p>
+              <p class="value">--°C</p>
+            </div>
+          </div>
+
+          <div class="detail visibility">
+            <i class="fa-solid fa-eye"></i>
+            <div class="content">
+              <p class="label">Visibility</p>
+              <p class="value">--km</p>
+            </div>
+          </div>
+
+          <div class="detail sunrise">
+            <i class="fa-solid fa-sun"></i>
+            <div class="content">
+              <p class="label">Sunrise</p>
+              <p class="value">--:-- AM</p>
+            </div>
+          </div>
+
+          <div class="detail sunset">
+            <i class="fa-solid fa-cloud-sun"></i>
+            <div class="content">
+              <p class="label">Sunset</p>
+              <p class="value">--:-- PM</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <footer class="weather-footer">
+        <p class="description">--</p>
+      </footer>
+    </div>
+
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="weatherScript.js" defer></script>
+</body>
+</html>
